@@ -205,5 +205,62 @@
             </objects>
             <point key="canvasLocation" x="-1006" y="60"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="QBZ-vI-orE">
+            <objects>
+                <viewController id="JQj-9F-rEl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ySB-qy-Pgr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GeX-Lo-fkK" customClass="InputTextField" customModule="WavesWallet_iOS" customModuleProvider="target">
+                                <rect key="frame" x="16" y="60" width="343" height="72"/>
+                                <color key="backgroundColor" red="0.1215686275" green="0.35294117650000001" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="xZf-rg-9cS"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cyy-fx-pEG" customClass="InputTextField" customModule="WavesWallet_iOS" customModuleProvider="target">
+                                <rect key="frame" x="16" y="140" width="343" height="72"/>
+                                <color key="backgroundColor" red="0.1215686275" green="0.35294117650000001" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="wJ9-fS-NkC"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YaH-5O-RlL">
+                                <rect key="frame" x="16" y="220" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UIn-4w-XtV">
+                                <rect key="frame" x="16" y="249" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="555-gX-egH" firstAttribute="trailing" secondItem="GeX-Lo-fkK" secondAttribute="trailing" constant="16" id="6pD-bd-NXw"/>
+                            <constraint firstItem="YaH-5O-RlL" firstAttribute="leading" secondItem="555-gX-egH" secondAttribute="leading" constant="16" id="7uP-pi-iRp"/>
+                            <constraint firstItem="555-gX-egH" firstAttribute="trailing" secondItem="YaH-5O-RlL" secondAttribute="trailing" constant="16" id="DQW-bt-yaM"/>
+                            <constraint firstItem="GeX-Lo-fkK" firstAttribute="top" secondItem="555-gX-egH" secondAttribute="top" constant="40" id="DQh-rD-7mW"/>
+                            <constraint firstItem="555-gX-egH" firstAttribute="trailing" secondItem="cyy-fx-pEG" secondAttribute="trailing" constant="16" id="DTF-KY-g6E"/>
+                            <constraint firstItem="cyy-fx-pEG" firstAttribute="top" secondItem="GeX-Lo-fkK" secondAttribute="bottom" constant="8" id="Ffp-b6-tNr"/>
+                            <constraint firstItem="555-gX-egH" firstAttribute="trailing" secondItem="UIn-4w-XtV" secondAttribute="trailing" constant="16" id="H7m-E3-RWd"/>
+                            <constraint firstItem="GeX-Lo-fkK" firstAttribute="leading" secondItem="555-gX-egH" secondAttribute="leading" constant="16" id="UkG-DY-aaP"/>
+                            <constraint firstItem="YaH-5O-RlL" firstAttribute="top" secondItem="cyy-fx-pEG" secondAttribute="bottom" constant="8" id="Xdt-0G-EYh"/>
+                            <constraint firstItem="cyy-fx-pEG" firstAttribute="leading" secondItem="555-gX-egH" secondAttribute="leading" constant="16" id="lCG-y6-BAo"/>
+                            <constraint firstItem="UIn-4w-XtV" firstAttribute="top" secondItem="YaH-5O-RlL" secondAttribute="bottom" constant="8" id="ndk-3Q-kfF"/>
+                            <constraint firstItem="UIn-4w-XtV" firstAttribute="leading" secondItem="555-gX-egH" secondAttribute="leading" constant="16" id="o1G-xt-bXk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="555-gX-egH"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lJC-j2-19r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="70" y="-54"/>
+        </scene>
     </scenes>
 </document>
