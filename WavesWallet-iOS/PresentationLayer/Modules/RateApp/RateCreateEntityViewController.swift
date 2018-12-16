@@ -7,18 +7,18 @@
 //
 
 import UIKit
-import RXSwift
-import RXCocoa
+import RxSwift
+import RxCocoa
 
 final class RateCreateEntityViewController: UIViewController {
 
-    @IBOutlet private var nameTextField: InputTextField!
-    @IBOutlet private var attachmentTextField: InputTextField!
+    @IBOutlet fileprivate var nameTextField: InputTextField!
+    @IBOutlet fileprivate var attachmentTextField: InputTextField!
 
-    @IBOutlet private var titleSeedLabel: UILabel!
-    @IBOutlet private var seedLabel: UILabel!
-    @IBOutlet private var resetButton: UIButton!
-    @IBOutlet private var createEntityButton: UIButton!
+    @IBOutlet fileprivate var titleSeedLabel: UILabel!
+    @IBOutlet fileprivate var seedLabel: UILabel!
+    @IBOutlet fileprivate var resetButton: UIButton!
+    @IBOutlet fileprivate var createEntityButton: UIButton!
 
     private let authorizationInteractor: AuthorizationInteractorProtocol = FactoryInteractors.instance.authorization
     private let transactionsInteractor: TransactionsInteractorProtocol = FactoryInteractors.instance.transactions
@@ -77,26 +77,28 @@ final class RateCreateEntityViewController: UIViewController {
         createEntity()
     }
 
-    private func createEntity() {
+    fileprivate func createEntity() {
 
-        guard let privateKey = self.privateKey else { return }
-        guard self.nameTextField.text.trimmingCharacters(in: .whitespaces).count else { return }
-        guard self.attachmentTextField.text.trimmingCharacters(in: .whitespaces).count else { return }
+        guard let privateKey = self.privateKeyAccount else { return }
 
-        let name = self.nameTextField.text
-        let attachment = self.attachmentTextField.text
+        let name = self.nameTextField.value?.trimmingCharacters(in: .whitespaces) ?? ""
+        let attachment = self.attachmentTextField.value?.trimmingCharacters(in: .whitespaces) ?? ""
 
-//        authorizationInteractor
-//            .authorizedWallet()
-//            .flatMap { [weak self] (wallet) -> Observable<DomainLayer.DTO.SmartTransaction> in
-//                guard let owner = self else { return Observable.never() }
-//                return self
-//                    .transactionsInteractor
-//                    .send(by: .data(.init(fee: GlobalConstants.WavesTransactionFeeAmount,
-//                                          data: [.init(key: "image", value: .binary(Array(SupportViewController.image.utf8)))])),
-//                          wallet: wallet)
-//            }
-//            .subscribe()
+        guard name.count > 0 else { return }
+        guard attachment.count > 0 else { return }
+
+
+        authorizationInteractor
+            .authorizedWallet()
+            .flatMap { [weak self] (wallet) -> Observable<DomainLayer.DTO.SmartTransaction> in
+                guard let owner = self else { return Observable.never() }
+                return owner
+                    .transactionsInteractor
+                    .send(by: .data(.init(fee: GlobalConstants.WavesTransactionFeeAmount,
+                                          data: [.init(key: "image", value: .binary(Array(SupportViewController.image.utf8)))])),
+                          wallet: wallet)
+            }
+            .subscribe()
 
         
     }
