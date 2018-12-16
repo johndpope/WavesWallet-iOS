@@ -187,7 +187,7 @@ extension AppCoordinator: PresentationCoordinator {
         case hello
         case slide(DomainLayer.DTO.Wallet)
         case enter
-        case passcode(DomainLayer.DTO.Wallet)
+        case passcode(DomainLayer.DTO.Wallet)        
     }
 
     func showDisplay(_ display: AppCoordinator.Display) {
@@ -213,10 +213,10 @@ extension AppCoordinator: PresentationCoordinator {
 
         case .slide(let wallet):
 
-            guard isHasCoordinator(type: SlideCoordinator.self) != true else { return }
-
-            let slideCoordinator = SlideCoordinator(window: window, wallet: wallet)
-            addChildCoordinatorAndStart(childCoordinator: slideCoordinator)
+            let vc = StoryboardScene.RateApp.rateCreateEntityViewController.instantiate()
+            let nv = CustomNavigationController(rootViewController: vc)
+            window.rootViewController = nv
+            
 
         case .enter:
 
@@ -229,6 +229,7 @@ extension AppCoordinator: PresentationCoordinator {
             let slideCoordinator = SlideCoordinator(window: window, wallet: nil)
             addChildCoordinatorAndStart(childCoordinator: slideCoordinator)
         }
+        
     }
 }
 

@@ -220,6 +220,11 @@ internal enum StoryboardScene {
 
     internal static let profileViewController = SceneType<WavesWallet_iOS.ProfileViewController>(storyboard: Profile.self, identifier: "ProfileViewController")
   }
+  internal enum RateApp: StoryboardType {
+    internal static let storyboardName = "RateApp"
+
+    internal static let rateCreateEntityViewController = SceneType<WavesWallet_iOS.RateCreateEntityViewController>(storyboard: RateApp.self, identifier: "RateCreateEntityViewController")
+  }
   internal enum Receive: StoryboardType {
     internal static let storyboardName = "Receive"
 

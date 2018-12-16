@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Rate Create Entity View Controller-->
+        <scene sceneID="awd-FW-VYM">
+            <objects>
+                <viewController storyboardIdentifier="RateCreateEntityViewController" id="uZM-oh-yFE" customClass="RateCreateEntityViewController" customModule="WavesWallet_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="K8B-qz-XXu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ch9-22-4Pw" customClass="InputTextField" customModule="WavesWallet_iOS" customModuleProvider="target">
+                                <rect key="frame" x="16" y="58" width="343" height="62"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="anz-hS-JLG"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b4T-aS-ebx" customClass="InputTextField" customModule="WavesWallet_iOS" customModuleProvider="target">
+                                <rect key="frame" x="16" y="128" width="343" height="62"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="ZAf-5d-4va"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q24-Dt-0hh">
+                                <rect key="frame" x="16" y="215" width="343" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hES-Yo-uV4">
+                                <rect key="frame" x="2" y="239" width="371" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3PCAB4sHXgvtu5NPoen6EXR5yaNbvsEA8Fj" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wCh-Fx-a1J">
+                                <rect key="frame" x="16" y="239" width="343" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="XXl-fE-3ca"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ozA-79-0I9">
+                                <rect key="frame" x="16" y="595" width="343" height="48"/>
+                                <color key="backgroundColor" red="0.1215686275" green="0.35294117650000001" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="8w2-aN-YjZ"/>
+                                </constraints>
+                                <state key="normal" title="Create">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapCreatyEntityButton" destination="uZM-oh-yFE" eventType="touchUpInside" id="bOU-iG-DpE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YS0-hS-BZz">
+                                <rect key="frame" x="16" y="535" width="343" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="L4W-nY-u52"/>
+                                </constraints>
+                                <state key="normal" title="Clean">
+                                    <color key="titleColor" red="1" green="0.022732125530000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapResetButton" destination="uZM-oh-yFE" eventType="touchUpInside" id="IPg-Tj-u5X"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YS0-hS-BZz" firstAttribute="leading" secondItem="5lU-2D-6XO" secondAttribute="leading" constant="16" id="1OQ-im-sXO"/>
+                            <constraint firstItem="hES-Yo-uV4" firstAttribute="top" secondItem="wCh-Fx-a1J" secondAttribute="top" id="51g-Id-HAZ"/>
+                            <constraint firstItem="5lU-2D-6XO" firstAttribute="trailing" secondItem="ch9-22-4Pw" secondAttribute="trailing" constant="16" id="9db-7H-sXM"/>
+                            <constraint firstItem="5lU-2D-6XO" firstAttribute="trailing" secondItem="YS0-hS-BZz" secondAttribute="trailing" constant="16" id="AKo-XH-7yt"/>
+                            <constraint firstItem="ch9-22-4Pw" firstAttribute="top" secondItem="5lU-2D-6XO" secondAttribute="top" constant="38" id="HjS-Ym-hzH"/>
+                            <constraint firstItem="hES-Yo-uV4" firstAttribute="leading" secondItem="wCh-Fx-a1J" secondAttribute="leading" constant="-14" id="Hz4-qR-miD"/>
+                            <constraint firstItem="wCh-Fx-a1J" firstAttribute="top" secondItem="q24-Dt-0hh" secondAttribute="bottom" constant="8" id="JgR-To-LM0"/>
+                            <constraint firstItem="ozA-79-0I9" firstAttribute="top" secondItem="YS0-hS-BZz" secondAttribute="bottom" constant="16" id="NO7-cu-edy"/>
+                            <constraint firstItem="b4T-aS-ebx" firstAttribute="leading" secondItem="5lU-2D-6XO" secondAttribute="leading" constant="16" id="UGR-Le-9rf"/>
+                            <constraint firstItem="hES-Yo-uV4" firstAttribute="bottom" secondItem="wCh-Fx-a1J" secondAttribute="bottom" id="ZsV-IN-oMB"/>
+                            <constraint firstItem="q24-Dt-0hh" firstAttribute="leading" secondItem="5lU-2D-6XO" secondAttribute="leading" constant="16" id="axq-HU-sBz"/>
+                            <constraint firstItem="hES-Yo-uV4" firstAttribute="trailing" secondItem="wCh-Fx-a1J" secondAttribute="trailing" constant="14" id="bx7-Gn-pKg"/>
+                            <constraint firstItem="b4T-aS-ebx" firstAttribute="top" secondItem="ch9-22-4Pw" secondAttribute="bottom" constant="8" id="cyN-nY-i1m"/>
+                            <constraint firstItem="q24-Dt-0hh" firstAttribute="top" secondItem="b4T-aS-ebx" secondAttribute="bottom" constant="25" id="fgP-OF-QMJ"/>
+                            <constraint firstItem="5lU-2D-6XO" firstAttribute="trailing" secondItem="b4T-aS-ebx" secondAttribute="trailing" constant="16" id="hQE-iy-93R"/>
+                            <constraint firstItem="ozA-79-0I9" firstAttribute="leading" secondItem="5lU-2D-6XO" secondAttribute="leading" constant="16" id="kJL-hu-EDg"/>
+                            <constraint firstItem="5lU-2D-6XO" firstAttribute="bottom" secondItem="ozA-79-0I9" secondAttribute="bottom" constant="24" id="pAz-Nt-mcD"/>
+                            <constraint firstItem="ch9-22-4Pw" firstAttribute="leading" secondItem="5lU-2D-6XO" secondAttribute="leading" constant="16" id="pOE-Jg-X27"/>
+                            <constraint firstItem="5lU-2D-6XO" firstAttribute="trailing" secondItem="q24-Dt-0hh" secondAttribute="trailing" constant="16" id="q5e-u1-J1J"/>
+                            <constraint firstItem="wCh-Fx-a1J" firstAttribute="leading" secondItem="5lU-2D-6XO" secondAttribute="leading" constant="16" id="saw-x4-LEd"/>
+                            <constraint firstItem="5lU-2D-6XO" firstAttribute="trailing" secondItem="wCh-Fx-a1J" secondAttribute="trailing" constant="16" id="tCa-BZ-m0Y"/>
+                            <constraint firstItem="5lU-2D-6XO" firstAttribute="trailing" secondItem="ozA-79-0I9" secondAttribute="trailing" constant="16" id="zF8-jh-M3b"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5lU-2D-6XO"/>
+                    </view>
+                    <connections>
+                        <outlet property="attachmentTextField" destination="b4T-aS-ebx" id="OHn-uK-qzK"/>
+                        <outlet property="createEntityButton" destination="ozA-79-0I9" id="scT-vK-Qn7"/>
+                        <outlet property="nameTextField" destination="ch9-22-4Pw" id="H4I-I0-YS1"/>
+                        <outlet property="resetButton" destination="YS0-hS-BZz" id="WQW-h5-Lvs"/>
+                        <outlet property="seedLabel" destination="wCh-Fx-a1J" id="TAe-zQ-Ok1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VK4-sF-WcR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="70" y="-54"/>
+        </scene>
+    </scenes>
+</document>

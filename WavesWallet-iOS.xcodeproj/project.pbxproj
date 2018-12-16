@@ -309,6 +309,8 @@
 		0A9797602108A11A00407F67 /* Wallet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A97975F2108A11A00407F67 /* Wallet.storyboard */; };
 		0A9797612108A60000407F67 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A979757210886EA00407F67 /* Storyboards.swift */; };
 		0A9797652108B18C00407F67 /* WalletModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9797642108B18C00407F67 /* WalletModuleOutput.swift */; };
+		0A98C24321C5E23F002AA386 /* RateApp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A98C24221C5E23F002AA386 /* RateApp.storyboard */; };
+		0A98C24521C5E25F002AA386 /* RateCreateEntityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A98C24421C5E25F002AA386 /* RateCreateEntityViewController.swift */; };
 		0A98D14A2138910600550FE0 /* DataTransaction+Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A98D1492138910600550FE0 /* DataTransaction+Mapper.swift */; };
 		0A98D14C2138A30700550FE0 /* AnyTransaction+Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A98D14B2138A30700550FE0 /* AnyTransaction+Mapper.swift */; };
 		0A9CA15821C2A4E0003C0A1B /* WindowRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9CA15321C2A4E0003C0A1B /* WindowRouter.swift */; };
@@ -1143,6 +1145,8 @@
 		0A97975B210888B600407F67 /* Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
 		0A97975F2108A11A00407F67 /* Wallet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Wallet.storyboard; sourceTree = "<group>"; };
 		0A9797642108B18C00407F67 /* WalletModuleOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletModuleOutput.swift; sourceTree = "<group>"; };
+		0A98C24221C5E23F002AA386 /* RateApp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RateApp.storyboard; sourceTree = "<group>"; };
+		0A98C24421C5E25F002AA386 /* RateCreateEntityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateCreateEntityViewController.swift; sourceTree = "<group>"; };
 		0A98D1492138910600550FE0 /* DataTransaction+Mapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataTransaction+Mapper.swift"; sourceTree = "<group>"; };
 		0A98D14B2138A30700550FE0 /* AnyTransaction+Mapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyTransaction+Mapper.swift"; sourceTree = "<group>"; };
 		0A9CA14C21C16B4A003C0A1B /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -2598,6 +2602,15 @@
 			path = Repositories;
 			sourceTree = "<group>";
 		};
+		0A98C24121C5E225002AA386 /* RateApp */ = {
+			isa = PBXGroup;
+			children = (
+				0A98C24221C5E23F002AA386 /* RateApp.storyboard */,
+				0A98C24421C5E25F002AA386 /* RateCreateEntityViewController.swift */,
+			);
+			path = RateApp;
+			sourceTree = "<group>";
+		};
 		0A9CA15221C2A4E0003C0A1B /* CoordinatorKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -2854,6 +2867,7 @@
 		0AF58F8B2191909200C8A4B3 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				0A98C24121C5E225002AA386 /* RateApp */,
 				E95B6B08219B3ADF00A85B5D /* TokenBurn */,
 				0A7CCDA0218A138D005D372B /* MyAddress */,
 				E9CD0D2F218137FE001A99B3 /* MainTabBar */,
@@ -4536,6 +4550,7 @@
 				0A7CCDB7218A17A9005D372B /* MyAddress.storyboard in Resources */,
 				E9B087BF2163886800937644 /* SearchBarView.xib in Resources */,
 				0A762D8B21639FA60019D447 /* TransactionHistoryButtonCell.xib in Resources */,
+				0A98C24321C5E23F002AA386 /* RateApp.storyboard in Resources */,
 				0A762D8A21639FA60019D447 /* TransactionHistoryKeysValuesCell.xib in Resources */,
 				0AA8CAD421527672000D09E6 /* PasscodeView.xib in Resources */,
 				E95B47CE21638A9F004D4E39 /* ShortInfoPageView.xib in Resources */,
@@ -5124,6 +5139,7 @@
 				0A25B46A216F69EC00638C93 /* Bundle+Version.swift in Sources */,
 				E9B087C72163886800937644 /* DexTraderContainerBaseHeaderView.swift in Sources */,
 				0ABD1BE821469D2F0027A7A2 /* AccountDomainDTO.swift in Sources */,
+				0A98C24521C5E25F002AA386 /* RateCreateEntityViewController.swift in Sources */,
 				E9B087FB2163886800937644 /* DexMyOrdersModuleBuilder.swift in Sources */,
 				0AE491F82107A52E009223DB /* WalletPresenterProtocol.swift in Sources */,
 				0A071E77215DB07C007D9750 /* ChooseAccountTypes.swift in Sources */,
