@@ -9,32 +9,11 @@ use_frameworks!(true)
 # Enable the stricter search paths and module map generation for all pods
 # use_modular_headers!
 
-# Pods for WavesWallet-iOS
-target 'WavesWallet-iOS' do
+# Pods for DomainLayer
+target 'DomainLayer' do
 
     inherit! :search_paths
 
-    # UI
-    pod 'RxCocoa'
-    pod 'RxDataSources'
-
-    pod 'TTTAttributedLabel'    
-    pod 'UITextView+Placeholder'
-
-    pod 'SwipeView'
-    pod 'MGSwipeTableCell'
-
-    pod 'UPCarouselFlowLayout'
-    pod 'InfiniteCollectionView', :git => 'git@github.com:wavesplatform/InfiniteCollectionView.git'
-    pod 'RESideMenu', :git => 'https://github.com/wavesplatform/RESideMenu.git'
-
-    pod 'Skeleton'
-    pod 'Charts'
-    pod 'Koloda'
-
-    pod 'IQKeyboardManagerSwift'
-    pod 'TPKeyboardAvoiding'
-    
     # Assisstant
     pod 'RxSwift'
     pod 'RxSwiftExt'
@@ -80,8 +59,7 @@ target 'WavesWallet-iOS' do
     pod 'RxAlamofire'
     pod 'Moya/RxSwift'
 
-    # Parser
-    pod 'Gloss', '2.0.0-beta.1'
+    # Parser    
     pod 'CSV.swift'
 
     # Gen
