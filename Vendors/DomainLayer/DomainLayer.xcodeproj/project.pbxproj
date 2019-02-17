@@ -54,6 +54,7 @@
 		0A24E7452218278700BA5834 /* DomainLayer */ = {
 			isa = PBXGroup;
 			children = (
+				0A24E7582218B31200BA5834 /* Sources */,
 				0A24E7462218278700BA5834 /* AppDelegate.swift */,
 				0A24E7482218278700BA5834 /* ViewController.swift */,
 				0A24E74A2218278700BA5834 /* Main.storyboard */,
@@ -62,6 +63,13 @@
 				0A24E7522218278800BA5834 /* Info.plist */,
 			);
 			path = DomainLayer;
+			sourceTree = "<group>";
+		};
+		0A24E7582218B31200BA5834 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
