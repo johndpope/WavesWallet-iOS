@@ -9,7 +9,7 @@
 import Foundation
 import _25519
 
-class Address {
+public class Address {
     static let AddressVersion: UInt8 = 1
     static let ChecksumLength = 4
     static let HashLength = 20
@@ -71,7 +71,7 @@ class Address {
     }
 }
 
-class PublicKeyAccount: Hashable {
+public class PublicKeyAccount: Hashable {
 
     let publicKey: [UInt8]
     let address: String
@@ -98,7 +98,7 @@ class PublicKeyAccount: Hashable {
     }
 }
 
-class PrivateKeyAccount: PublicKeyAccount {
+public class PrivateKeyAccount: PublicKeyAccount {
     
     let privateKey: [UInt8]
     let seed: [UInt8]

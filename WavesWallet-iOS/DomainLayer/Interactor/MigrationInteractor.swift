@@ -63,7 +63,11 @@ final class SweetMigration {
 
 final class MigrationInteractor {
 
-    private var walletsRepository: WalletsRepositoryProtocol = FactoryRepositories.instance.walletsRepositoryLocal
+    private var walletsRepository: WalletsRepositoryProtocol
+
+    init(walletsRepository: WalletsRepositoryProtocol) {
+        self.walletsRepository = walletsRepository
+    }
 
     private var sweetMigration: SweetMigration = SweetMigration()
 

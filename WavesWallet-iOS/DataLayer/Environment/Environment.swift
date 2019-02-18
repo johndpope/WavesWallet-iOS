@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Environment: Decodable {
+public struct Environment: Decodable {
 
     enum Constants {
         static let alias = "alias"
@@ -54,7 +54,7 @@ extension Environment {
     }
 }
 
-final class Environments {
+public final class Environments {
     enum Constants {
         fileprivate static let main = "environment_mainnet"
         fileprivate static let test = "environment_testnet"

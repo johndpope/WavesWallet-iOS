@@ -1,7 +1,7 @@
 import UIKit
 import DeviceKit
 
-struct Platform {
+public struct Platform {
 
     static let ScreenWidth = UIScreen.main.bounds.width
     

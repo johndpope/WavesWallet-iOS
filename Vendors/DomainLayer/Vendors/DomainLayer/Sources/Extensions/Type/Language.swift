@@ -8,13 +8,13 @@
 
 import Foundation
 
-struct Language: Codable {
+public struct Language: Codable {
     let title: String
     let icon: String
     let code: String
 }
 
-protocol Localization {
+public protocol Localization {
     func setupLocalization()
 }
 
@@ -32,7 +32,7 @@ private struct LanguageCode: TSUD {
     }
 }
 
-extension Language {
+public extension Language {
 
     static var list: [Language] = {
         let list: [Language] = JSONDecoder.decode(json: "Languages") ?? []

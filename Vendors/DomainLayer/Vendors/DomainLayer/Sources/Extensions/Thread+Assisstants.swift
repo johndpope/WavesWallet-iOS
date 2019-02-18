@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension Thread {
+public extension Thread {
 
     static func threadSharedObject<T: AnyObject>(key: String, create: () -> T) -> T {
         if let cachedObj = Thread.current.threadDictionary[key] as? T {

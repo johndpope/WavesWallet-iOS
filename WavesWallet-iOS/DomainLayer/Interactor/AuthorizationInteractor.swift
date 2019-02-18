@@ -552,10 +552,11 @@ extension AuthorizationInteractor {
                                deleleteWalletSeed,
                                localWalletRepository.removeWalletEncryption(by: wallet.publicKey)])
             .flatMap({ _ -> Observable<Bool> in
-                let realm = try? WalletRealmFactory.realm(accountAddress: wallet.address)
-                try? realm?.write {
-                    realm?.deleteAll()
-                }
+                //TODO: Library
+//                let realm = try? WalletRealmFactory.realm(accountAddress: wallet.address)
+//                try? realm?.write {
+//                    realm?.deleteAll()
+//                }
                 return Observable.just(true)
             })
             .map { _ in true }

@@ -6,7 +6,7 @@ private enum Constants {
     static let decimalSeparator = "."
 }
 
-class MoneyUtil {
+public class MoneyUtil {
     
     class func getScaledFullText(_ amount: Int64, decimals: Int, isFiat: Bool) -> String {
         let f = NumberFormatter()

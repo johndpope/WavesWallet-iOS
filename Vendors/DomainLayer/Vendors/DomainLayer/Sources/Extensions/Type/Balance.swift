@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Balance {
+public struct Balance {
     struct Currency {
         let title: String
         let ticker: String?
@@ -18,7 +18,7 @@ struct Balance {
     let money: Money
 }
 
-extension Balance {
+public extension Balance {
 
     enum Sign: String {
         case none = ""

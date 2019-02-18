@@ -9,7 +9,7 @@
 import Foundation
 //import Sentry
 
-extension SweetLogger {
+public extension SweetLogger {
 
     static func error(_ message: @escaping  @autoclosure () -> Any,
                _ file: String = #file,
@@ -72,7 +72,7 @@ extension SweetLogger {
     }
 }
 
-enum SweetLoggerLevel {
+public enum SweetLoggerLevel {
     case error
     case debug
     case warning
@@ -81,7 +81,7 @@ enum SweetLoggerLevel {
     case network
 }
 
-protocol SweetLoggerProtocol {
+public protocol SweetLoggerProtocol {
 
     func send(message: @escaping @autoclosure () -> Any,
                level: SweetLoggerLevel,
@@ -94,7 +94,7 @@ protocol SweetLoggerProtocol {
     var visibleLevels: [SweetLoggerLevel] { get }
 }
 
-final class SweetLogger: SweetLoggerProtocol {
+public final class SweetLogger: SweetLoggerProtocol {
 
     static let current: SweetLogger = SweetLogger()
 
@@ -209,7 +209,7 @@ private extension SweetLoggerLevel {
     }
 }
 
-final class SweetLoggerConsole: SweetLoggerProtocol {
+public final class SweetLoggerConsole: SweetLoggerProtocol {
 
     var visibleLevels: [SweetLoggerLevel]
 

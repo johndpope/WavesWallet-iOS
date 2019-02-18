@@ -8,7 +8,7 @@
 
 import Foundation
 
-private typealias CoinomatService = Coinomat
+//private typealias CoinomatService = Coinomat
 
 extension DomainLayer.DTO {
 
@@ -35,7 +35,8 @@ extension DomainLayer.DTO {
             let attachment: String?
             let hasSponsorship: Bool
             var isGatewayAddress: Bool {
-                return CoinomatService.addresses.contains(recipient.address)
+                return false
+//                CoinomatService.addresses.contains(recipient.address)
             }
         }
 

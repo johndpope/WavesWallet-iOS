@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum GlobalConstants {
+public enum GlobalConstants {
     #if DEBUG
     static let accountNameMinLimitSymbols: Int = 2
     static let accountNameMaxLimitSymbols: Int = 24
@@ -32,7 +32,7 @@ enum GlobalConstants {
     static let FiatDecimals: Int = 2
 }
 
-enum RegEx {
+public enum RegEx {
     static let alias = "^[a-z0-9\\.@_-]*$"
 
     static func alias(_ alias: String) -> Bool {

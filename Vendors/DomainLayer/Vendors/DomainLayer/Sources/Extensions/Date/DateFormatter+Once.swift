@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension DateFormatter {
+public extension DateFormatter {
 
     fileprivate enum Constants {
         static let DateFormatterKey = "waves.dateFormatter"

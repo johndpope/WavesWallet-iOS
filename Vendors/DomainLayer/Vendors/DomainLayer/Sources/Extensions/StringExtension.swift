@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-extension String {
+public extension String {
     
     func trimmingLeadingWhitespace() -> String {
         let range = (self as NSString).range(of: "^\\s*", options: [.regularExpression])
@@ -52,20 +52,20 @@ extension String {
 
 }
 
-extension NSAttributedString {
+public extension NSAttributedString {
 
     func boundingRect(with size: CGSize) -> CGRect {
         return boundingRect(with: size, options: [.usesLineFragmentOrigin, .usesFontLeading], context: nil)
     }    
 }
 
-extension String {
+public extension String {
     func arrayWithSize() -> [UInt8] {
         return Array(utf8).arrayWithSize()
     }
 }
 
-extension Array where Element == UInt8 {
+public extension Array where Element == UInt8 {
 
     func arrayWithSize() -> [UInt8] {
         let b: [UInt8] = self

@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Money: Hashable, Codable {
+public struct Money: Hashable, Codable {
     let amount: Int64
     let decimals: Int
     
@@ -21,7 +21,7 @@ struct Money: Hashable, Codable {
     }
 }
 
-extension Money {
+public extension Money {
  
     init(value: Decimal, _ decimals: Int) {
         let decimalValue = (value * pow(10, decimals)).rounded()

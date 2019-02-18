@@ -1,6 +1,6 @@
 import Foundation
 
-class DateUtil {
+public class DateUtil {
     
     static let dateFormatter: DateFormatter = {
         let f = DateFormatter()

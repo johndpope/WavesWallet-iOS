@@ -14,7 +14,7 @@ private enum Constants {
     static let assetScriptErrorCode = 308
 }
 
-enum NetworkError: Error {
+public enum NetworkError: Error {
   
     case message(String)
     case notFound
@@ -42,21 +42,21 @@ enum NetworkError: Error {
         }
     }
     
-    var text: String {
-        switch self {
-        case .message(let message):
-            return message
-            
-        case .internetNotWorking:
-            return Localizable.Waves.General.Error.Title.noconnectiontotheinternet
-            
-        default:
-            return Localizable.Waves.General.Error.Title.notfound
-        }
-    }
+//    var text: String {
+//        switch self {
+//        case .message(let message):
+//            return message
+//            
+//        case .internetNotWorking:
+//            return Localizable.Waves.General.Error.Title.noconnectiontotheinternet
+//            
+//        default:
+//            return Localizable.Waves.General.Error.Title.notfound
+//        }
+//    }
 }
 
-extension MoyaError {
+public extension MoyaError {
 
     var error: Error? {
         switch self {
@@ -78,7 +78,7 @@ extension MoyaError {
     }
 }
 
-extension NetworkError {
+public extension NetworkError {
 
     static func error(by error: Error) -> NetworkError {
 

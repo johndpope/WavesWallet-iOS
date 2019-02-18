@@ -9,6 +9,7 @@
 import Foundation
 import Keccak
 import Blake2
+import CommonCrypto
 import _25519
 
 class Hash {

@@ -9,7 +9,7 @@
 import Foundation
 import Base58
 
-class Base58 {
+public class Base58 {
     class func encode(_ input: [UInt8]) -> String {
         var size = Int(ceil(log(256.0)/log(58)*Double(input.count))) + 1
         var data = Data(count: size)

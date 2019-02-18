@@ -16,7 +16,11 @@ class Address {
     static let AddressLength = 1 + 1 + HashLength + ChecksumLength
 
     class func getSchemeByte() -> UInt8 {
-        return Environments.current.scheme.utf8.first!
+
+
+        //TODO: Lib
+        return 0
+//        return Environments.current.scheme.utf8.first!
     }
     
     class func addressFromPublicKey(publicKey: [UInt8]) -> String {
@@ -31,10 +35,12 @@ class Address {
     
     class func isValidAlias(alias: String?) -> Bool {
         guard let alias = alias else { return false }
-        
-        return RegEx.alias(alias) &&
-            alias.count >= GlobalConstants.aliasNameMinLimitSymbols &&
-            alias.count <= GlobalConstants.aliasNameMaxLimitSymbols
+
+        //TODO: Lib
+        return false
+//        return RegEx.alias(alias) &&
+//            alias.count >= GlobalConstants.aliasNameMinLimitSymbols &&
+//            alias.count <= GlobalConstants.aliasNameMaxLimitSymbols
     }
     
     class func isValidAddress(address: String?) -> Bool {

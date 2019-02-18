@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension DateFormatter {
+public extension DateFormatter {
 
     static func iso() -> DateFormatter {
         let dateFormatter = DateFormatter.sharedFormatter

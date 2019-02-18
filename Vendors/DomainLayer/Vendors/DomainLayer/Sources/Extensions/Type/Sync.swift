@@ -9,7 +9,7 @@
 import Foundation
 import RxSwift
 
-enum Sync<Result> {
+public enum Sync<Result> {
     case remote(Result)
     case local(Result, error: Error)
     case error(Error)
@@ -68,4 +68,5 @@ enum Sync<Result> {
         }
     }
 }
-typealias SyncObservable<R> = Observable<Sync<R>>
+
+public typealias SyncObservable<R> = Observable<Sync<R>>

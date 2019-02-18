@@ -25,11 +25,11 @@ private protocol OptionalP {
     var isNil: Bool { get }
 }
 
-extension Optional: OptionalP {
+public extension Optional: OptionalP {
     var isNil: Bool { return self == nil }
 }
 
-extension TSUD {
+public extension TSUD {
     public static var value: ValueType {
         get {
             return get()

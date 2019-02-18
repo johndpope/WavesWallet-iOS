@@ -17,7 +17,7 @@ private enum Constants {
     static let sendStartUrl = "client.wavesplatform.com/#send/"
 }
 
-final class QRCodeParser {
+public final class QRCodeParser {
     
     static func parseAssetID(_ string: String) -> String? {
 

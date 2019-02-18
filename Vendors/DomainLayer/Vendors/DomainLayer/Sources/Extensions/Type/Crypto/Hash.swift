@@ -12,7 +12,7 @@ import Blake2
 import CommonCrypto
 import _25519
 
-class Hash {
+public class Hash {
     static func secureHash(_ input: [UInt8]) -> [UInt8] {
         var data = Data(count: 32)
         var key: UInt8 = 0

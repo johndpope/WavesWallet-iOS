@@ -8,15 +8,15 @@
 
 import Foundation
 
-enum SigningWalletsError: Error {
+public enum SigningWalletsError: Error {
     case accessDenied
     case notSigned
 }
 
-enum SigningKind {
+public enum SigningKind {
     case none
 }
 
-protocol SigningWalletsProtocol: AnyObject {
+public protocol SigningWalletsProtocol: AnyObject {
     func sign(input: [UInt8], kind: [SigningKind], publicKey: String) throws -> [UInt8]
 }
