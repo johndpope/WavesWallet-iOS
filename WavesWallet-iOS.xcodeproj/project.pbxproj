@@ -46,6 +46,7 @@
 		04EFAF4D2164F8D800277CCF /* EnterStartBlockCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04EFAF4C2164F8D800277CCF /* EnterStartBlockCell.xib */; };
 		04F2DD2E219F27AB0070AF9D /* MultilineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F2DD2D219F27AB0070AF9D /* MultilineTextField.swift */; };
 		04F9979621AA197B0036768D /* CameraAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F9979521AA197B0036768D /* CameraAccess.swift */; };
+		0A0123DA221BD97300B154C6 /* AuthorizationInteractorLocalizableImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0123D9221BD97300B154C6 /* AuthorizationInteractorLocalizableImp.swift */; };
 		0A02D20721AEA1B1005DF820 /* Appsflyer-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A02D20621AEA1B1005DF820 /* Appsflyer-Info.plist */; };
 		0A071E41215AEF61007D9750 /* AccountPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A071E40215AEF61007D9750 /* AccountPassword.storyboard */; };
 		0A071E43215B0A1B007D9750 /* SigningWalletsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A071E42215B0A1B007D9750 /* SigningWalletsProtocol.swift */; };
@@ -946,6 +947,7 @@
 		04EFAF4C2164F8D800277CCF /* EnterStartBlockCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EnterStartBlockCell.xib; sourceTree = "<group>"; };
 		04F2DD2D219F27AB0070AF9D /* MultilineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilineTextField.swift; sourceTree = "<group>"; };
 		04F9979521AA197B0036768D /* CameraAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraAccess.swift; sourceTree = "<group>"; };
+		0A0123D9221BD97300B154C6 /* AuthorizationInteractorLocalizableImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationInteractorLocalizableImp.swift; sourceTree = "<group>"; };
 		0A02D20621AEA1B1005DF820 /* Appsflyer-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Appsflyer-Info.plist"; sourceTree = "<group>"; };
 		0A02D20821AEDD3C005DF820 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0A02D20921AEDD3C005DF820 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Waves.strings; sourceTree = "<group>"; };
@@ -1963,6 +1965,18 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		0A0123D8221BD95A00B154C6 /* Assisstants */ = {
+			isa = PBXGroup;
+			children = (
+				0A0123D9221BD97300B154C6 /* AuthorizationInteractorLocalizableImp.swift */,
+				0A7643FD21187DF500B633E1 /* FactoryInteractors.swift */,
+				0A7643F9211874F400B633E1 /* FactoryInteractorsProtocol.swift */,
+				0A7643FF21187E3A00B633E1 /* FactoryRepositories.swift */,
+				0A7643FB211876DF00B633E1 /* FactoryRepositoriesProtocol.swift */,
+			);
+			path = Assisstants;
+			sourceTree = "<group>";
+		};
 		0A071E3D215AEF03007D9750 /* AccountPassword */ = {
 			isa = PBXGroup;
 			children = (
@@ -2388,10 +2402,6 @@
 			isa = PBXGroup;
 			children = (
 				0A485E942100A0D400079B49 /* DomainLayerTypes.swift */,
-				0A7643FD21187DF500B633E1 /* FactoryInteractors.swift */,
-				0A7643F9211874F400B633E1 /* FactoryInteractorsProtocol.swift */,
-				0A7643FF21187E3A00B633E1 /* FactoryRepositories.swift */,
-				0A7643FB211876DF00B633E1 /* FactoryRepositoriesProtocol.swift */,
 				0A381EEF2106892700D250F1 /* Assisstants */,
 				0A1DAD6320F395E7004DA625 /* Interactor */,
 				0A14CFCD2144157A00C3A4D5 /* Mapper */,
@@ -2726,6 +2736,7 @@
 		0A93FED120FCAAA30058179E /* PresentationLayer */ = {
 			isa = PBXGroup;
 			children = (
+				0A0123D8221BD95A00B154C6 /* Assisstants */,
 				0ADD7FF721F22FFA0075FC59 /* Coordinators */,
 				0AF92281212E1234003BA067 /* CustomViews */,
 				0ADD7F1E21F22FB60075FC59 /* Extensions */,
@@ -5927,6 +5938,7 @@
 				0AAB15C521655BEC00F1F7BC /* ProfileBackupPhraseCell.swift in Sources */,
 				0A41410B217603F800B1310E /* ChangePasswordPresenter.swift in Sources */,
 				E9B087C32163886800937644 /* DexTraderContainerModuleOutput.swift in Sources */,
+				0A0123DA221BD97300B154C6 /* AuthorizationInteractorLocalizableImp.swift in Sources */,
 				0A5E4BB5213805B400E3C3C3 /* MassTransferTransaction.swift in Sources */,
 				0A57C38E21F74E2E003B5386 /* AssetScriptTransaction+Mapper.swift in Sources */,
 				0A5E4BBA21381E3400E3C3C3 /* DataTransaction.swift in Sources */,

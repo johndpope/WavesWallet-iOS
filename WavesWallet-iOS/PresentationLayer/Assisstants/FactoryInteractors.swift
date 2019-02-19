@@ -8,20 +8,7 @@
 
 import Foundation
 
-private struct AuthorizationInteractorLocalizableImp: AuthorizationInteractorLocalizable {
-    var fallbackTitle: String {
-        return Localizable.Waves.Biometric.localizedFallbackTitle
-    }
-    var cancelTitle: String {
-        return Localizable.Waves.Biometric.localizedCancelTitle
-    }
-    var readFromkeychain: String {
-        return Localizable.Waves.Biometric.readfromkeychain
-    }
-    var saveInkeychain: String {
-        return Localizable.Waves.Biometric.saveinkeychain
-    }
-}
+
 
 final class FactoryInteractors: FactoryInteractorsProtocol {
 
